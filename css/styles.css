@@ -1,47 +1,59 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #121212;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     color: white;
 }
 
 .app {
-    max-width: 400px;
+    max-width: 420px;
     margin: auto;
-    background: #1e1e1e;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
 }
 
 .header {
     text-align: center;
-    padding: 15px;
-    background: #282828;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    box-shadow: 0 0 20px #ff00cc;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 2px;
 }
 
 .menu {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    background: #333;
+    background: #111;
 }
 
 .menu button {
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
-    background: #444;
+    background: linear-gradient(45deg, #00f5ff, #ff00ff);
     color: white;
     cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #00f5ff;
 }
 
 .menu button:hover {
-    background: #666;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff00ff;
 }
 
 main {
     flex: 1;
-    padding: 10px;
+    padding: 15px;
 }
 
 .seccion {
@@ -53,20 +65,28 @@ main {
 }
 
 .card {
-    background: #2a2a2a;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 8px;
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 12px;
+    border: 1px solid #00f5ff;
+    box-shadow: 0 0 15px #00f5ff;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px #ff00ff;
 }
 
 .footer {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
-    background: #282828;
+    padding: 15px;
+    background: #111;
+    font-size: 20px;
 }
 
-/* RESPONSIVO */
 @media (min-width: 600px) {
     .app {
         max-width: 600px;
