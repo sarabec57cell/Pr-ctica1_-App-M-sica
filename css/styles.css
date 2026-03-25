@@ -1,1 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+}
 
+.app {
+    max-width: 400px;
+    margin: auto;
+    background: #1e1e1e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    padding: 15px;
+    background: #282828;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #333;
+}
+
+.menu button {
+    padding: 10px;
+    border: none;
+    background: #444;
+    color: white;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background: #666;
+}
+
+main {
+    flex: 1;
+    padding: 10px;
+}
+
+.seccion {
+    display: none;
+}
+
+.activa {
+    display: block;
+}
+
+.card {
+    background: #2a2a2a;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: #282828;
+}
+
+/* RESPONSIVO */
+@media (min-width: 600px) {
+    .app {
+        max-width: 600px;
+    }
+}
